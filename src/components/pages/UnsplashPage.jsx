@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Contents from "../layout/Contents";
-import UnsplashSlider from "../unsplash/UnsplashSlider";
 import UnsplashSearch from "../unsplash/UnsplashSearch";
 import UnsplashTag from "../unsplash/UnsplashTag";
 import UnsplashCont from "../unsplash/UnsplashCont";
@@ -36,9 +35,8 @@ const UnsplashPage = () => {
   return (
     <Contents>
       <ContTitle title="unsplash" />
-      <UnsplashSlider />
       <UnsplashSearch onSearch={search} />
-      <UnsplashTag />
+      <UnsplashTag onSearch={search} />
       <UnsplashCont images={images} />
     </Contents>
   );

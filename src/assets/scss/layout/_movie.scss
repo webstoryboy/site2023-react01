@@ -90,8 +90,37 @@
   }
 
   button {
-    @include button(#f7100d, #fff);
+    @include button(#4857ec, #fff);
     @include border(50px);
     font-family: "GmarketSans";
+  }
+}
+
+.movie__tag {
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    li {
+      a {
+        display: inline-block;
+        border: 1px solid #4857ec;
+        padding: 5px 20px;
+        margin: 0 10px;
+        color: #4857ec;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #4857ec;
+          color: #fff;
+        }
+      }
+    }
+    li.active a {
+      background-color: #4857ec;
+      color: #fff;
+    }
   }
 }
